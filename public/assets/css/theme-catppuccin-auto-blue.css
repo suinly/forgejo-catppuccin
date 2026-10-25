@@ -1,0 +1,3 @@
+/* Catppuccin · Blue · Forgejo 17 · Follow the system color scheme. */
+@import url("./theme-catppuccin-latte-blue.css") (prefers-color-scheme: light);
+@import url("./theme-catppuccin-macchiato-blue.css") (prefers-color-scheme: dark);

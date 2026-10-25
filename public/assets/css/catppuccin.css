@@ -1,0 +1,323 @@
+/* Shared Catppuccin colors for Forgejo 17. Load through a theme entry file. */
+:root {
+  /* A slight shade keeps Latte links readable on the Base background. */
+  --color-primary: color-mix(in srgb, var(--ctp-blue) 95%, #000000);
+  --color-primary-contrast: var(--ctp-on-accent);
+  --color-primary-hover: color-mix(in srgb, var(--color-primary) 90%, var(--ctp-text));
+  --color-primary-active: color-mix(in srgb, var(--color-primary) 80%, var(--ctp-text));
+  --color-primary-dark-1: var(--color-primary-hover);
+  --color-primary-dark-2: var(--color-primary-active);
+  --color-primary-dark-3: color-mix(in srgb, var(--ctp-blue) 70%, var(--ctp-text));
+  --color-primary-dark-4: color-mix(in srgb, var(--ctp-blue) 60%, var(--ctp-text));
+  --color-primary-light-1: var(--color-primary-hover);
+  --color-primary-light-2: var(--color-primary-active);
+  --color-primary-light-3: var(--color-primary);
+  --color-primary-light-4: color-mix(in srgb, var(--ctp-blue) 60%, var(--ctp-base));
+  --color-primary-light-5: color-mix(in srgb, var(--ctp-blue) 40%, var(--ctp-base));
+  --color-primary-light-6: color-mix(in srgb, var(--ctp-blue) 20%, var(--ctp-base));
+  --color-primary-light-7: color-mix(in srgb, var(--ctp-blue) 10%, var(--ctp-base));
+  --color-primary-alpha-10: color-mix(in srgb, var(--ctp-blue) 10%, transparent);
+  --color-primary-alpha-20: color-mix(in srgb, var(--ctp-blue) 20%, transparent);
+  --color-primary-alpha-30: color-mix(in srgb, var(--ctp-blue) 30%, transparent);
+  --color-primary-alpha-40: color-mix(in srgb, var(--ctp-blue) 40%, transparent);
+  --color-primary-alpha-50: color-mix(in srgb, var(--ctp-blue) 50%, transparent);
+  --color-primary-alpha-60: color-mix(in srgb, var(--ctp-blue) 60%, transparent);
+  --color-primary-alpha-70: color-mix(in srgb, var(--ctp-blue) 70%, transparent);
+  --color-primary-alpha-80: color-mix(in srgb, var(--ctp-blue) 80%, transparent);
+  --color-primary-alpha-90: color-mix(in srgb, var(--ctp-blue) 90%, transparent);
+
+  --color-secondary: var(--ctp-surface0);
+  --color-secondary-hover: var(--ctp-surface1);
+  --color-secondary-active: var(--ctp-surface2);
+  --color-secondary-dark-1: var(--ctp-surface1);
+  --color-secondary-dark-2: var(--ctp-surface2);
+  --color-secondary-dark-3: var(--ctp-overlay0);
+  --color-secondary-dark-4: var(--ctp-overlay1);
+  --color-secondary-dark-5: var(--ctp-overlay2);
+  --color-secondary-dark-6: var(--ctp-subtext0);
+  --color-secondary-dark-7: var(--ctp-subtext1);
+  --color-secondary-dark-8: var(--ctp-text);
+  --color-secondary-dark-9: var(--ctp-text);
+  --color-secondary-dark-10: var(--ctp-text);
+  --color-secondary-dark-11: var(--ctp-text);
+  --color-secondary-dark-12: var(--ctp-text);
+  --color-secondary-dark-13: var(--ctp-text);
+  --color-secondary-light-1: var(--ctp-surface0);
+  --color-secondary-light-2: var(--ctp-mantle);
+  --color-secondary-light-3: var(--ctp-mantle);
+  --color-secondary-light-4: var(--ctp-base);
+  --color-secondary-alpha-10: color-mix(in srgb, var(--ctp-surface1) 10%, transparent);
+  --color-secondary-alpha-20: color-mix(in srgb, var(--ctp-surface1) 20%, transparent);
+  --color-secondary-alpha-30: color-mix(in srgb, var(--ctp-surface1) 30%, transparent);
+  --color-secondary-alpha-40: color-mix(in srgb, var(--ctp-surface1) 40%, transparent);
+  --color-secondary-alpha-50: color-mix(in srgb, var(--ctp-surface1) 50%, transparent);
+  --color-secondary-alpha-60: color-mix(in srgb, var(--ctp-surface1) 60%, transparent);
+  --color-secondary-alpha-70: color-mix(in srgb, var(--ctp-surface1) 70%, transparent);
+  --color-secondary-alpha-80: color-mix(in srgb, var(--ctp-surface1) 80%, transparent);
+  --color-secondary-alpha-90: color-mix(in srgb, var(--ctp-surface1) 90%, transparent);
+
+  /* Filled semantic buttons keep white text in Forgejo's Fomantic styles. */
+  --color-red: color-mix(in srgb, var(--ctp-red) 60%, #000000);
+  --color-orange: color-mix(in srgb, var(--ctp-peach) 55%, #000000);
+  --color-yellow: color-mix(in srgb, var(--ctp-yellow) 50%, #000000);
+  --color-olive: color-mix(in srgb, var(--ctp-green) 55%, #000000);
+  --color-green: color-mix(in srgb, var(--ctp-green) 55%, #000000);
+  --color-teal: color-mix(in srgb, var(--ctp-teal) 55%, #000000);
+  --color-blue: color-mix(in srgb, var(--ctp-blue) 60%, #000000);
+  --color-violet: color-mix(in srgb, var(--ctp-mauve) 60%, #000000);
+  --color-purple: var(--color-violet);
+  --color-pink: color-mix(in srgb, var(--ctp-pink) 55%, #000000);
+  --color-brown: color-mix(in srgb, var(--ctp-rosewater) 55%, #000000);
+  --color-grey: var(--ctp-overlay0);
+  --color-black: var(--ctp-crust);
+  --color-red-light: var(--color-red);
+  --color-orange-light: var(--color-orange);
+  --color-yellow-light: var(--color-yellow);
+  --color-olive-light: var(--color-olive);
+  --color-green-light: var(--color-green);
+  --color-teal-light: var(--color-teal);
+  --color-blue-light: var(--color-blue);
+  --color-violet-light: var(--color-violet);
+  --color-purple-light: var(--color-purple);
+  --color-pink-light: var(--color-pink);
+  --color-brown-light: var(--color-brown);
+  --color-grey-light: var(--ctp-subtext0);
+  --color-black-light: var(--ctp-mantle);
+  --color-red-dark-1: color-mix(in srgb, var(--color-red) 90%, #000000);
+  --color-red-dark-2: color-mix(in srgb, var(--color-red) 80%, #000000);
+  --color-orange-dark-1: color-mix(in srgb, var(--color-orange) 90%, #000000);
+  --color-orange-dark-2: color-mix(in srgb, var(--color-orange) 80%, #000000);
+  --color-yellow-dark-1: color-mix(in srgb, var(--color-yellow) 90%, #000000);
+  --color-yellow-dark-2: color-mix(in srgb, var(--color-yellow) 80%, #000000);
+  --color-olive-dark-1: color-mix(in srgb, var(--color-olive) 90%, #000000);
+  --color-olive-dark-2: color-mix(in srgb, var(--color-olive) 80%, #000000);
+  --color-green-dark-1: color-mix(in srgb, var(--color-green) 90%, #000000);
+  --color-green-dark-2: color-mix(in srgb, var(--color-green) 80%, #000000);
+  --color-teal-dark-1: color-mix(in srgb, var(--color-teal) 90%, #000000);
+  --color-teal-dark-2: color-mix(in srgb, var(--color-teal) 80%, #000000);
+  --color-violet-dark-1: color-mix(in srgb, var(--color-violet) 90%, #000000);
+  --color-violet-dark-2: color-mix(in srgb, var(--color-violet) 80%, #000000);
+  --color-purple-dark-1: var(--color-violet-dark-1);
+  --color-purple-dark-2: var(--color-violet-dark-2);
+  --color-pink-dark-1: color-mix(in srgb, var(--color-pink) 90%, #000000);
+  --color-pink-dark-2: color-mix(in srgb, var(--color-pink) 80%, #000000);
+  --color-brown-dark-1: color-mix(in srgb, var(--color-brown) 90%, #000000);
+  --color-brown-dark-2: color-mix(in srgb, var(--color-brown) 80%, #000000);
+  --color-black-dark-1: var(--ctp-crust);
+  --color-black-dark-2: var(--ctp-crust);
+  --color-gold: var(--ctp-yellow);
+  --color-white: #ffffff;
+
+  --color-thin-green: var(--ctp-green);
+  --color-thin-red: var(--ctp-red);
+  --color-thin-purple: var(--ctp-mauve);
+  --color-thin-violet: var(--ctp-mauve);
+  --color-thin-orange: var(--ctp-peach);
+  --color-thin-blue: var(--ctp-blue);
+  --color-thin-red-highlight: var(--ctp-maroon);
+  --color-danger-bg: color-mix(in srgb, var(--ctp-red) 15%, var(--ctp-base));
+
+  --color-body: var(--ctp-base);
+  --color-box-header: var(--ctp-mantle);
+  --color-box-body: var(--ctp-base);
+  --color-box-body-highlight: var(--ctp-surface0);
+  --color-text-dark: var(--ctp-text);
+  --color-text: var(--ctp-text);
+  --color-text-light: var(--ctp-subtext1);
+  --color-text-light-1: var(--ctp-subtext1);
+  --color-text-light-2: var(--ctp-subtext0);
+  --color-text-light-3: var(--ctp-subtext0);
+  --color-text-focus: var(--ctp-text);
+  --color-footer: var(--ctp-crust);
+  --color-timeline: var(--ctp-surface1);
+  --color-input-text: var(--ctp-text);
+  --color-input-background: var(--ctp-mantle);
+  --color-input-toggle-background: var(--ctp-surface0);
+  --color-input-border: var(--ctp-surface1);
+  --color-input-border-hover: var(--ctp-overlay0);
+  --color-header-wrapper: var(--ctp-mantle);
+  --color-header-wrapper-transparent: color-mix(in srgb, var(--ctp-mantle) 0%, transparent);
+  --color-light: color-mix(in srgb, var(--ctp-text) 6%, transparent);
+  --color-light-mimic-enabled: var(--color-light);
+  --color-light-border: var(--ctp-surface0);
+  --color-hover: color-mix(in srgb, var(--ctp-surface0) 65%, transparent);
+  --color-active: var(--ctp-surface0);
+  --color-menu: var(--ctp-mantle);
+  --color-card: var(--ctp-mantle);
+  --fancy-card-bg: var(--ctp-surface0);
+  --fancy-card-border: var(--ctp-surface1);
+  --color-markup-table-row: color-mix(in srgb, var(--ctp-surface0) 35%, transparent);
+  --color-markup-code-block: var(--ctp-mantle);
+  --color-markup-code-inline: var(--ctp-surface0);
+  --color-button: var(--ctp-surface0);
+  --color-code-bg: var(--ctp-base);
+  --color-shadow: #00000033;
+  --color-secondary-bg: var(--ctp-mantle);
+  --color-expand-button: var(--ctp-surface0);
+  --color-placeholder-text: var(--ctp-subtext0);
+  --color-editor-line-highlight: var(--ctp-surface0);
+  --color-project-board-bg: var(--ctp-mantle);
+  --color-project-board-dark-label: var(--ctp-subtext0);
+  --color-caret: var(--ctp-rosewater);
+  --color-reaction-bg: var(--ctp-surface0);
+  --color-reaction-active-bg: var(--color-primary-alpha-20);
+  --color-reaction-hover-bg: var(--color-primary-alpha-30);
+  --color-tooltip-text: var(--ctp-text);
+  --color-tooltip-bg: var(--ctp-crust);
+  --color-nav-bg: var(--ctp-crust);
+  --color-nav-hover-bg: var(--ctp-surface0);
+  --color-secondary-nav-bg: var(--ctp-base);
+  --color-label-text: var(--ctp-text);
+  --color-label-bg: var(--ctp-surface0);
+  --color-label-hover-bg: var(--ctp-surface1);
+  --color-label-active-bg: var(--ctp-surface2);
+  --color-label-bg-alt: var(--ctp-surface1);
+  --color-accent: var(--color-primary);
+  --color-small-accent: var(--color-primary-alpha-20);
+  --color-highlight-fg: var(--ctp-text);
+  --color-highlight-bg: var(--color-primary-alpha-20);
+  --color-overlay-backdrop: #00000099;
+  --color-selection-bg: var(--ctp-blue);
+  --color-selection-fg: var(--ctp-on-accent);
+  --checkerboard-color-1: var(--ctp-surface0);
+  --checkerboard-color-2: var(--ctp-mantle);
+
+  --color-diff-removed-word-bg: color-mix(in srgb, var(--ctp-red) 30%, transparent);
+  --color-diff-added-word-bg: color-mix(in srgb, var(--ctp-green) 30%, transparent);
+  --color-diff-removed-row-bg: color-mix(in srgb, var(--ctp-red) 12%, var(--ctp-base));
+  --color-diff-moved-row-bg: color-mix(in srgb, var(--ctp-yellow) 12%, var(--ctp-base));
+  --color-diff-added-row-bg: color-mix(in srgb, var(--ctp-green) 12%, var(--ctp-base));
+  --color-diff-removed-row-border: color-mix(in srgb, var(--ctp-red) 30%, var(--ctp-base));
+  --color-diff-moved-row-border: color-mix(in srgb, var(--ctp-yellow) 30%, var(--ctp-base));
+  --color-diff-added-row-border: color-mix(in srgb, var(--ctp-green) 30%, var(--ctp-base));
+  --color-diff-inactive: var(--ctp-mantle);
+
+  --color-error-border: color-mix(in srgb, var(--ctp-red) 40%, var(--ctp-base));
+  --color-error-bg: color-mix(in srgb, var(--ctp-red) 10%, var(--ctp-base));
+  --color-error-bg-active: color-mix(in srgb, var(--ctp-red) 20%, var(--ctp-base));
+  --color-error-bg-hover: color-mix(in srgb, var(--ctp-red) 15%, var(--ctp-base));
+  --color-error-text: var(--ctp-text);
+  --color-success-border: color-mix(in srgb, var(--ctp-green) 40%, var(--ctp-base));
+  --color-success-bg: color-mix(in srgb, var(--ctp-green) 10%, var(--ctp-base));
+  --color-success-text: var(--ctp-text);
+  --color-warning-border: color-mix(in srgb, var(--ctp-yellow) 40%, var(--ctp-base));
+  --color-warning-bg: color-mix(in srgb, var(--ctp-yellow) 10%, var(--ctp-base));
+  --color-warning-text: var(--ctp-text);
+  --color-info-border: color-mix(in srgb, var(--ctp-blue) 40%, var(--ctp-base));
+  --color-info-bg: color-mix(in srgb, var(--ctp-blue) 10%, var(--ctp-base));
+  --color-info-text: var(--ctp-text);
+
+  --color-red-badge: var(--color-thin-red);
+  --color-red-badge-bg: color-mix(in srgb, var(--ctp-red) 12%, transparent);
+  --color-red-badge-hover-bg: color-mix(in srgb, var(--ctp-red) 20%, transparent);
+  --color-green-badge: var(--color-thin-green);
+  --color-green-badge-bg: color-mix(in srgb, var(--ctp-green) 12%, transparent);
+  --color-green-badge-hover-bg: color-mix(in srgb, var(--ctp-green) 20%, transparent);
+  --color-yellow-badge: var(--ctp-yellow);
+  --color-yellow-badge-bg: color-mix(in srgb, var(--ctp-yellow) 12%, transparent);
+  --color-yellow-badge-hover-bg: color-mix(in srgb, var(--ctp-yellow) 20%, transparent);
+  --color-orange-badge: var(--color-thin-orange);
+  --color-orange-badge-bg: color-mix(in srgb, var(--ctp-peach) 12%, transparent);
+  --color-orange-badge-hover-bg: color-mix(in srgb, var(--ctp-peach) 20%, transparent);
+
+  --color-console-fg: var(--ctp-text);
+  --color-console-fg-subtle: var(--ctp-subtext0);
+  --color-console-bg: var(--ctp-mantle);
+  --color-console-border: var(--ctp-surface1);
+  --color-console-hover-bg: var(--ctp-surface0);
+  --color-console-active-bg: var(--ctp-surface1);
+  --color-console-menu-bg: var(--ctp-base);
+  --color-console-menu-border: var(--ctp-surface1);
+  --color-ansi-black: var(--ctp-surface1);
+  --color-ansi-red: var(--ctp-red);
+  --color-ansi-green: var(--ctp-green);
+  --color-ansi-yellow: var(--ctp-yellow);
+  --color-ansi-blue: var(--ctp-blue);
+  --color-ansi-magenta: var(--ctp-pink);
+  --color-ansi-cyan: var(--ctp-teal);
+  --color-ansi-white: var(--ctp-subtext1);
+  --color-ansi-bright-black: var(--ctp-overlay0);
+  --color-ansi-bright-red: var(--ctp-maroon);
+  --color-ansi-bright-green: var(--ctp-green);
+  --color-ansi-bright-yellow: var(--ctp-yellow);
+  --color-ansi-bright-blue: var(--ctp-sapphire);
+  --color-ansi-bright-magenta: var(--ctp-mauve);
+  --color-ansi-bright-cyan: var(--ctp-sky);
+  --color-ansi-bright-white: var(--ctp-text);
+  --color-indicator-offline: var(--ctp-overlay0);
+  --color-indicator-offline-20: color-mix(in srgb, var(--ctp-overlay0) 20%, transparent);
+  --color-indicator-idle: var(--ctp-green);
+  --color-indicator-idle-20: color-mix(in srgb, var(--ctp-green) 20%, transparent);
+  --color-indicator-active: var(--ctp-blue);
+  --color-indicator-active-20: var(--color-primary-alpha-20);
+}
+
+/* Native dark theme labels otherwise use white on a pastel accent. */
+.ui.primary.label,
+.ui.primary.labels .label,
+.ui.red.label.notification_count {
+  color: var(--ctp-on-accent) !important;
+}
+
+i.grey.icon.icon.icon.icon { color: var(--ctp-subtext0) !important; }
+
+/* Forgejo's diff counters otherwise reuse dark button fill colors as text. */
+.repository .diff-detail-box .diff-detail-stats strong:nth-of-type(1) {
+  color: color-mix(in srgb, var(--ctp-yellow) 35%, var(--ctp-text));
+}
+.repository .diff-detail-box .diff-detail-stats strong:nth-of-type(2) {
+  color: color-mix(in srgb, var(--ctp-green) 35%, var(--ctp-text));
+}
+.repository .diff-detail-box .diff-detail-stats strong:nth-of-type(3) {
+  color: color-mix(in srgb, var(--ctp-red) 35%, var(--ctp-text));
+}
+
+/* Chroma uses these classes for repository files, diffs, and fenced code. */
+.chroma { color: var(--ctp-text); background-color: var(--color-code-bg); }
+.chroma :is(.c, .ch, .cm, .c1, .cs, .cp, .cpf, .go, .w) { color: var(--ctp-subtext0); }
+.chroma :is(.k, .kc, .kd, .kn, .kp, .kr, .kt, .ow) { color: var(--ctp-mauve); }
+.chroma :is(.s, .s1, .s2, .sb, .sc, .sd, .sh, .sx, .dl, .sa) { color: var(--ctp-green); }
+.chroma :is(.se, .si, .sr, .ss) { color: var(--ctp-pink); }
+.chroma :is(.m, .mb, .mf, .mh, .mi, .il, .mo) { color: var(--ctp-peach); }
+.chroma :is(.nf, .fm, .na) { color: var(--ctp-blue); }
+.chroma :is(.nc, .nn, .ne, .ni, .nl) { color: var(--ctp-yellow); }
+.chroma .no { color: var(--ctp-peach); }
+.chroma :is(.nb, .bp) { color: var(--ctp-red); }
+.chroma :is(.nv, .vc, .vg, .vi, .vm, .n, .nx, .gp, .gs) { color: var(--ctp-text); }
+.chroma .nt { color: var(--ctp-mauve); }
+.chroma .nd { color: var(--ctp-pink); }
+.chroma :is(.o, .p) { color: var(--ctp-sky); }
+.chroma :is(.ln, .lnt) { color: var(--ctp-subtext0); }
+.chroma .hl { background-color: var(--ctp-surface0); }
+.chroma .gd { color: var(--ctp-red); background-color: var(--color-diff-removed-row-bg); }
+.chroma .gi { color: var(--ctp-green); background-color: var(--color-diff-added-row-bg); }
+.chroma :is(.gr, .gt) { color: var(--ctp-red); }
+.chroma :is(.gh, .gu) { color: var(--ctp-blue); }
+.chroma .ge { color: var(--ctp-mauve); }
+
+.CodeMirror.cm-s-default,
+.CodeMirror.cm-s-paper {
+  color: var(--ctp-text);
+  background-color: var(--ctp-base);
+}
+.CodeMirror.cm-s-default .cm-comment,
+.CodeMirror.cm-s-paper .cm-comment { color: var(--ctp-subtext0); }
+.CodeMirror.cm-s-default :is(.cm-keyword, .cm-tag),
+.CodeMirror.cm-s-paper :is(.cm-keyword, .cm-tag) { color: var(--ctp-mauve); }
+.CodeMirror.cm-s-default :is(.cm-string, .cm-string-2, .cm-quote),
+.CodeMirror.cm-s-paper :is(.cm-string, .cm-string-2, .cm-quote) { color: var(--ctp-green); }
+.CodeMirror.cm-s-default :is(.cm-number, .cm-atom),
+.CodeMirror.cm-s-paper :is(.cm-number, .cm-atom) { color: var(--ctp-peach); }
+.CodeMirror.cm-s-default :is(.cm-property, .cm-def, .cm-header, .cm-link),
+.CodeMirror.cm-s-paper :is(.cm-property, .cm-def, .cm-header, .cm-link) { color: var(--ctp-blue); }
+.CodeMirror.cm-s-default :is(.cm-variable-2, .cm-variable-3, .cm-attribute, .cm-builtin),
+.CodeMirror.cm-s-paper :is(.cm-variable-2, .cm-variable-3, .cm-attribute, .cm-builtin) { color: var(--ctp-yellow); }
+.CodeMirror.cm-s-default :is(.cm-meta, .cm-qualifier, .cm-bracket, .cm-hr, .cm-url),
+.CodeMirror.cm-s-paper :is(.cm-meta, .cm-qualifier, .cm-bracket, .cm-hr, .cm-url) { color: var(--ctp-subtext1); }
+.CodeMirror.cm-s-default .cm-error,
+.CodeMirror.cm-s-paper .cm-error { color: var(--ctp-red); }
+
+/* shortcut: CM6 generates token colors in JS; revisit when Forgejo exposes CSS tokens. */
+.cm-editor .cm-selectionBackground { background-color: var(--color-primary-alpha-30) !important; }
+.cm-editor :is(.cm-activeLine, .cm-activeLineGutter) { background-color: var(--color-editor-line-highlight); }
+.cm-editor .cm-searchMatch { background-color: var(--color-primary-alpha-30); }
